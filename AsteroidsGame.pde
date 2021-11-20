@@ -3,7 +3,6 @@ Star [] sue;
 public void setup() 
 {
   //your code here
-  size (400,400);
   background (0);
   sue = new Star[100];
   for (int i = 0; i < sue.length; i++){
