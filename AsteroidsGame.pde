@@ -1,4 +1,3 @@
-//your variable declarations here
 Spaceship bob = new Spaceship();
 Star [] sue;
 public void setup() 
@@ -10,8 +9,7 @@ public void setup()
   for (int i = 0; i < sue.length; i++){
     sue[i] = new Star ();
   }
-  //bob.turn(90);
- // bob.accelerate(0.2);
+
 }
 public void draw() {
   //your code here
@@ -20,18 +18,27 @@ public void draw() {
   sue[i].show();
   bob.move();
   bob.show();
- if (keyPressed){  
- if (key == 'a'){  
+}
+ public void keyPressed(){
+ if (key == 'a') 
+   {
     bob.turn(-1);
-  }
- if (key == ' '){  
-   bob.accelerate(.0000005);
-  }
-}
-}
+   }
+  
+ if (key == ' ')
+   {
+   bob.accelerate(0.5);
+   }
+  
+ if (key == 'w') 
+   {
+    bob.turn(1);
+   }
 
-// if (key == ' '){  
-// bob.accelerate(2);
-//public void keyPressed (){
-//  if (key == 'h'){
- //   bob.setXspeed(0);
+ if (key == 'x') 
+   {
+    bob.setCenterX((int)(Math.random()*400));
+    bob.setCenterY((int)(Math.random()*400));
+    bob.setPointDirection((int)(Math.random()*400));
+   }
+}
