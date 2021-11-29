@@ -1,4 +1,4 @@
-Spaceship bob = new Spaceship();
+Spaceship bob;
 Star [] sue;
 public void setup() 
 {
@@ -6,6 +6,7 @@ public void setup()
   size (400,400);
   background (0);
   sue = new Star[100];
+  bob = new Spaceship();
   for (int i = 0; i < sue.length; i++){
     sue[i] = new Star ();
   }
