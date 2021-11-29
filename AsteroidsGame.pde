@@ -14,9 +14,9 @@ public void setup()
 public void draw() {
   //your code here
   background(0);
-  for(int i = 0; i < sue.length; i++)
-  sue[i].show();
-  bob.move();
+  //for(int i = 0; i < sue.length; i++)
+  //sue[i].show();
+  //bob.move();
   bob.show();
 }
  public void keyPressed(){
