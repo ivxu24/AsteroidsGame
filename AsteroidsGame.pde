@@ -1,26 +1,34 @@
-Spaceship bob;
+Spaceship bob = new Spaceship();
 Star [] sue;
+ArrayList <Asteroids> carl = new ArrayList <Asteroids> (); 
+
 public void setup() 
 {
   //your code here
   size (400,400);
   background (0);
   sue = new Star[100];
-  bob = new Spaceship();
   for (int i = 0; i < sue.length; i++){
     sue[i] = new Star ();
   }
-
+ //  creates 5 asteroids
+   for (int i = 0; i < 6; i++){
+    carl.add(new Asteroids());
+   }
 }
 public void draw() {
   //your code here
   background(0);
-  for(int i = 0; i < sue.length; i++)
-  sue[i].show();
   bob.move();
   bob.show();
+  for(int i = 0; i < sue.length; i++){
+  sue[i].show();
+  }
+  for (int i = 0; i< carl.size(); i++){
+  carl.get(i).show();
+  }
 }
- public void keyPressed(){
+ public void keyPressed(){ // controls spaceship
  if (key == 'a') 
    {
     bob.turn(-1);
