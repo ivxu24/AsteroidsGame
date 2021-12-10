@@ -29,12 +29,12 @@ public void draw() {
   carl.get(i).move();
   }
 }
-
-for(int i = 0; i < carl.size(); i++) {//removes asteroids that strike spaceship
-if(dist(bob.getX(), bob.getY(),carl.get(i).getX, carl.get(i).getY <= 20))
-carl.remove(i);
-i --; //prevent arraylist trap
-}
+//removes asteroids that strike spaceship
+//for(int i = 0; i < carl.size(); i++) {
+ // if(dist(bob.getX(), bob.getY(),carl.get(i).getX, carl.get(i).getY <= 20))
+//carl.remove(i);
+//i --; //prevent arraylist trap
+//}
 
  public void keyPressed(){ // controls spaceship
  if (key == 'a') 
