@@ -26,6 +26,7 @@ public void draw() {
   }
   for (int i = 0; i< carl.size(); i++){
   carl.get(i).show();
+  carl.get(i).move();
   }
 }
  public void keyPressed(){ // controls spaceship
