@@ -27,9 +27,9 @@ public void draw() {
   for (int i = 0; i< carl.size(); i++){
   carl.get(i).show();
   carl.get(i).move();
-  float d =bob.getX(), bob.getY(),carl.get(i).getX(), carl.get(i).getY());
-   if (d < 10)
-   rocks.remove(i);
+float d =dist((float)bob.getX(), (float)bob.getY(),(float)carl.get(i).getX(), (float)carl.get(i).getY());
+ if (d < 10)
+   carl.remove(i);
   }
 }
 //removes asteroids that strike spaceship
@@ -38,17 +38,17 @@ public void draw() {
  public void keyPressed(){ // controls spaceship
  if (key == 'a') 
    {
-    bob.turn(-1);
+    bob.turn(-20);
    }
   
  if (key == ' ')
    {
-   bob.accelerate(0.5);
+   bob.accelerate(1);
    }
   
  if (key == 'w') 
    {
-    bob.turn(1);
+    bob.turn(20);
    }
 
  if (key == 'x') 
