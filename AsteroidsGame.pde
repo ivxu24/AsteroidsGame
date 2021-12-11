@@ -36,6 +36,8 @@ public void draw() {
 //i --; //prevent arraylist trap
 //}
 
+float d =bob.getX(), bob.getY(),carl.get(i).getX(), carl.get(i).getY());
+
  public void keyPressed(){ // controls spaceship
  if (key == 'a') 
    {
